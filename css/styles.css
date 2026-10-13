@@ -1,0 +1,140 @@
+:root {
+    --color-background: #f2f4f7;
+    --color-text: #17202b;
+    --color-navy: #0b162a;
+    --color-navy-hover: #172b4d;
+    --color-orange: #c83803;
+    --color-orange-hover: #ff6a2a;
+    --color-white: #ffffff;
+}
+
+.body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.header {
+    padding: 2.5rem 1rem;
+    background-color: var(--color-navy);
+    border-bottom: 6px solid var(--color-orange);
+    color: var(--color-white);
+}
+
+.title {
+    margin: 0;
+    color: var(--color-orange);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.classification {
+    margin: 0.5rem 0 0;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+}
+
+.introsection {
+    max-width: 800px;
+    margin: 2rem auto 1rem;
+    padding: 0 1rem;
+}
+
+.informational {
+    margin-bottom: 0.5rem;
+    color: var(--color-navy);
+}
+
+.informational2 {
+    margin-top: 0;
+}
+
+.logo {
+    display: block;
+    width: min(500px, calc(100% - 2rem));
+    height: auto;
+    margin: 1.5rem auto 2rem;
+}
+
+.footer {
+    padding: 0 1rem;
+}
+
+.navigationbutton {
+    display: block;
+    width: min(360px, calc(100% - 2rem));
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--color-orange);
+    border-radius: 8px;
+    background-color: var(--color-navy);
+    color: var(--color-orange);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navigationbutton:hover,
+.navigationbutton:focus-visible {
+    background-color: var(--color-navy-hover);
+    color: var(--color-orange-hover);
+    text-decoration: none;
+}
+
+.navigationbutton:focus-visible {
+    outline: 3px solid var(--color-orange);
+    outline-offset: 3px;
+}
+.class-card {
+ height: calc(100% - 1.5rem);
+ background-color: var(--color-white);
+ border-left: 4px solid var(--color-orange);
+ border-radius: 8px;
+ padding: 1.5rem;
+ margin-bottom: 1.5rem;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+.class-card:hover {
+ border-left-color: var(--color-navy);
+ transform: translateY(-3px);
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.class-card h4 {
+ color: var(--color-navy);
+ font-weight: bold;
+ margin-bottom: 0.5rem;
+}
+
+
+.class-card h5 {
+ color: var(--color-text);
+ font-size: 1.25rem;
+ margin-bottom: 0.75rem;
+}
+
+
+.class-card p {
+ color: var(--color-text);
+ margin-bottom: 0;
+}
+
+
+.class-card a {
+ color: var(--color-navy);
+ text-decoration: none;
+ font-weight: 600;
+}
+
+
+.class-card a:hover {
+ color: var(--color-orange);
+ text-decoration: underline;
+}
